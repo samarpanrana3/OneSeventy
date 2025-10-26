@@ -22,18 +22,29 @@
     align-items: center;
 }
 
-.main > span{
-    font-size: 20rem;
+.main {
+    text-align: center;
 }
 
-.extra {
+.main > span{
+    font-size: min(20rem, 8vw); 
+}
+
+.footer {
+    text-align: center;
+    padding: 0.2rem;
+    background-color: rgb(13, 77, 132);
+    font-size: 0.8rem;
+}
+
+/* .extra {
     display: flex;
     gap: 10rem;
 }
 
 .extra > div {
     font-size: 4rem;
-}
+} */
 
 body {
     display: flex;
@@ -50,7 +61,7 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-    .main {
+    .main > span{
         font-size: 15rem;
     }
 }
